@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Forms</title>
+  </head>
+  <body>
+    <form action="./result.html" method="get">
+
+      <!-- Label kullanimi ve text input -->
+      <div>
+        <label for="isim">Isim</label> <br />
+
+        <input type="text" id="isim" name="Adi" placeholder="Lütfen adinizi giriniz"/> <br />
+
+        <label for="soyisim">Soyisim</label> <br />
+
+        <input type="text" id="soyisim" name="Soyadi" placeholder="Soyad..."/> <br />
+      </div>
+
+      <!-- password -->
+
+      <div>
+        <label for="parola">Parola</label> <br>
+        <input type="password" name="Sifre" id="parola" placeholder="Parola..." required minlength="5">
+      </div>
+
+        <!-- radio  -->
+      <div>
+        <label for="">Cinsiyet</label> <br>
+        <label for="male">Erkek</label>
+        <input type="radio" name="cinsiyet" id="male" value="Erkek">
+
+        <label for="female">Kadin</label>
+        <input type="radio" name="cinsiyet" id="female" value="Kadin">
+
+        <label for="other">Others</label>
+        <input type="radio" name="cinsiyet" id="other" value="Belirtmek istemiyor">
+
+      </div>
+      
+      <!-- checkbox -->
+      <div>
+        <label for=""> Hobilerinizi giriniz:</label> <br>
+      
+        <input type="checkbox" name="hobi1" id="at" value="Binicilik">
+        <label for="at">Binicilik</label>
+        <br>
+        <input type="checkbox" name="hobi2" id="ok" value="Okculuk">
+        <label for="ok">Okculuk</label>
+        <br>
+        <input type="checkbox" name="hobi3" id="balik" value="Balikcilik">
+        <label for="balik">Balikcilik</label>
+      </div>
+
+        <!-- number  -->
+
+        <div>
+
+          <label for="age">Yas:</label>
+          <input type="number" name="Yasiniz" id="age" min="0" max="70" step="5">
+
+        </div>
+        <!-- search  -->
+
+        <div>
+
+          <label for="ara">Search</label>
+          <input type="search" name="Arandi" id="ara">
+
+        </div>
+
+        <!-- color  -->
+
+        <div>
+          <label for="renk">Renk Sec</label>
+          <input type="color" name="secilen renk" id="renk">
+        </div>
+
+        <!-- date  -->
+
+        <div>
+          <label for="">Tarih girin</label>
+          <input type="date" name="Girilen Tarih" id="tarih" min="2024-01-23" max="2024-11-11">
+        </div>
+
+        <!-- dosya sec  -->
+      
+        <div>
+          <label for="dosya">Dosya Sec</label>
+          <input type="file" name="Secilen Dosya" id="dosya">
+        </div>
+
+      <!-- telefon  -->
+
+      <div>
+        <label for="tel">Telefon No:</label>
+        <input type="tel" name="Tel-No" id="tel" pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}" placeholder="xxx-xxx-xx-xx"
+      </div>
+
+      <!-- select -->
+
+      <div>
+        
+        <label for="seker1">Hangi Tatliyi Seversiniz</label> 
+        <br>
+        <select name="secilen tatli" id="sweet" size="4" multiple>
+          <option value="Sütlac">Sütlac</option>
+          <option value="Keskül">Keskül</option>
+          <option value="Supangle">Supangle</option>
+          <option value="Kazandibi">Kazandibi</option>
+
+        </select>
+      </div>
+
+      <!-- Optgrup -->
+      <br>
+      <div>
+        <label for="seker2">Tatli Tercihiniz</label>
+        <br><br>
+        <select name="tatli_tercihi" id="seker2" size="7" multiple>
+
+         <optgroup label="Sütlü Tatlilar">
+          <option value="Sütlac">Sütlac</option>
+          <option value="Keskül">Keskül</option>
+          <option value="Supangle">Supangle</option>
+          <option value="Kazandibi">Kazandibi</option>
+         </optgroup>
+
+         <optgroup label="Serbetli Tatlilar">
+          <option value="Baklava">Baklava</option>
+          <option value="Künefe">Künefe</option>
+          <option value="Katmer">Katmer</option>
+          <option value="Kalburabasti">Kalburabasti</option>
+         </optgroup>
+
+        </select>
+      </div>
+
+      <!-- Text Area  -->
+      
+      <div>
+        
+        <label for="yorum">Yorum</label> <br>
+        <textarea name="girilen yorum" id="yorum" style="resize: none;" placeholder="Yorum..."></textarea>
+
+      </div>
+
+      <!-- datalist  -->
+
+      <div>
+        <label for="browser">Kullanilan Browser</label>
+        <br>
+        <input type="text" name="secilen Browser" list="browsers" id="browser">
+
+        <datalist id="browsers">
+          <option value="Chrome"></option>
+          <option value="Firefox"></option>
+          <option value="Safari"></option>
+          <option value="Brave"></option>
+          <option value="Opera"></option>
+        </datalist>
+      
+      </div>
+
+      <!-- Fieldset/legend  -->
+
+      <div>
+        <fieldset>
+          <legend>Kisisel Bilgieler</legend>
+          <label for="fname">Name</label>
+          <br>
+          <input type="text" name="adim" id="fname">
+          <br>
+          <label for="sname">Surname</label>
+          <br>
+          <input type="text" name="adim" id="sname">
+
+        </fieldset>
+
+
+      </div>
+
+
+      <br>
+      <input type="reset" value="Sifirla">
+      <input type="submit" value="Send">
+    </form>
+  </body>
+</html>

@@ -1,0 +1,88 @@
+*{
+  border: 2px solid red;
+  margin: 0px;
+  padding: 0px;
+}
+/* root element html */
+html{
+  font-size: 10px;
+
+}
+ .container{
+  width: 50vw;
+  margin: auto;
+  text-align: center;
+ 
+ }
+
+
+.card{
+  width: 80%;
+  /* max-width: fit-content; */
+  text-align: center;
+  margin: auto;
+  /* margin: auto;  ortalayamadim neden? */
+  background-color: bisque;
+  /* margin: 1rem; */
+  border-radius: 1rem;
+  padding: 1rem;
+}
+
+.card:hover{
+  background-color: cadetblue;
+}
+
+.card img{
+  width: 100%;
+}
+
+.card img:hover{
+  width: 50%;
+}
+
+.card img+h2{
+  color: brown;
+
+}
+
+.card img+h2::first-letter{
+  font-size: 40px;
+}
+
+
+.card > p{
+  font-size: 1.5rem;
+}
+
+.card > p::first-line{
+  font-weight: bold;
+}
+
+
+
+.emCheck{
+font-size: 30px;
+}
+
+.emCheck p{
+  font-size: 2em;
+}
+
+/* rem dersek büyük atalarinin sözünden cikma  em dersek babanin sözünden cikma.  */
+
+.card img+h2::before{
+  content: "😎";
+  font-size: 0.5rem;
+
+}
+
+.card img+h2::after{
+  content: "✌️";
+  font-size: 5rem;
+}
+
+/* Attribute Selector */
+
+p[title="paragraph"]{
+  background-color: aqua;
+}

@@ -1,0 +1,87 @@
+
+.yazi{
+    width: 50vw;
+    margin: 1rem auto;
+    text-align: center;
+    font-size: 2rem;
+}
+
+.yazi1{
+    background-color: darkcyan;
+    transform: rotateX(290deg); 
+    /* rotateX te 90 ve 270 derecede görünmez. */
+}
+
+.yazi2{
+    background-color: brown;
+}
+
+.yazi2:active{
+    transform: rotateY(60deg);
+}
+
+.yazi3{
+    background-color: chocolate;
+    transform: rotate(-45deg);
+}
+
+.yazi4{
+    background-color: blueviolet;
+   
+}
+
+.yazi4:active{
+    transform: scaleX(1.5);
+}
+
+.yazi5{
+    background-color: aquamarine;
+
+}
+
+.yazi5:active{
+    transform: scaleY(2);
+}
+
+.yazi6{
+    background-color: rgb(18, 92, 189);
+   
+}
+
+.yazi6:active{
+    transform: scale(2);
+}
+
+img{
+    width:20%;
+    /* transform: rotate(60deg); */
+    transform: scale(1.5);
+}
+
+.box{
+    background-color: crimson;
+    width: 200px;
+    height: 200px;
+    margin: 2px;
+
+}
+
+.x{
+  background-image: url("https://picsum.photos/id/458/600/400");
+  background-size: cover;
+  transition:all 2s cubic-bezier(0, 0, 0.04, 0.85);
+  transition-delay: 1s;
+}
+
+.x:hover{
+    transform: translateX(100px);
+    background-image: url("https://picsum.photos/id/650/600/400");
+}
+
+.y:active{
+    transform: translateY(100px);
+}
+
+.xy:hover{
+    transform: translate(150px, 150px);
+}
