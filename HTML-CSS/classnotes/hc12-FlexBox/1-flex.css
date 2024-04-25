@@ -1,0 +1,130 @@
+.container{
+  background-color: antiquewhite;
+  display: flex;
+  flex-wrap: wrap;
+
+  justify-content: center;
+  justify-content: flex-start;
+  justify-content: flex-end;
+  justify-content: space-between;
+  justify-content: space-around;
+  justify-content: space-evenly;
+}
+
+
+
+
+.container div{
+  background-color: rgb(225, 88, 88);
+  width: 5rem;
+  height: 5rem;
+  border: 1px solid red;
+
+}
+
+
+.container1{
+  background-color: aqua;
+  height: 20rem;
+  display: flex;
+  justify-content: flex-end;
+  gap: 1rem;
+  flex-wrap: wrap;
+  align-items: center;
+  align-items: flex-start;
+  /* align-items: stretch;  */
+  /* stretch varsa divler height olmamali. Divin kendi heghti varsa stretch uygulanamaz. */
+  align-items: baseline;
+  
+}
+
+ /*! Dikey Hizalama => align-items
+  /**flex-start: Nesneler, kapsayıcının en üstünden başlayarak dizilirler.
+/**flex-end: Nesneler, kapsayıcının en altından başlayarak, yukarı doğru dizilirler.
+/**center: Nesneler ortalı bir şekilde dikey olarak sıralanırlar.
+/**baseline: yazıların yerine bakılır, sıradanlığı bozan yazı tipi göz önüne alınarak hizalanmaya başlanılır.
+/**stretch: Tüm nesneler kapsayıcı yüksekliğine eşit olacak şekilde dizilirler. özel height ları yoksa çalışır*/
+
+
+
+
+.container1 div{
+  background-color: pink;
+  width: 5rem;
+  height: 5rem;
+  border: 1px solid red;
+  text-align: center;
+
+}
+
+/* baseline value özelligini görebilmek icin child lara özelliklere verdik. */
+
+.container1 div:nth-child(1){
+  height: 6rem;
+
+}
+
+.container1 div:nth-child(2){
+  padding-top: 4rem;
+}
+
+.container1 div:nth-child(3){
+  height: 2rem;
+  padding: 5rem 0;
+  font-size: 5rem;
+}
+  
+ul{
+  background-color: rgb(233, 129, 149);
+  height: 30rem;
+  list-style-type: none;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  align-content: flex-end;
+  align-content: flex-start;
+  align-content: center;
+
+  /* çok satırlı bir kapsayıcımız varsa, child ları dikeyde hizalamak için align-items yeterli gelmez, onun yerine tüm child lar etkilensin diye, align-content key ini kullanıyoruz */
+  
+  gap: 6rem 3rem;
+  /* ilk value chidlarin alt üst boslugunu, ikinci value sag sol aralardaki boslugu temsil eder. */
+}
+
+li{
+  background-color: magenta;
+  width: 4rem;
+  height: 5rem;
+  
+}
+
+.container2{
+  background-color: yellow;
+  padding: 1rem 0;
+  display: flex;
+}
+
+.container2 div{
+  background-color: red;
+  width: 5rem;
+  margin: 1rem;
+
+}
+/* Bastan verdigimiz width üstüne, browser in width ini, altta verdigim parcalar ölcüsünde kendi width ine ekler. */
+
+.grow1{
+ flex-grow: 1;
+}
+
+.grow2{
+ flex-grow: 2;
+}
+
+.grow3{
+ flex-grow: 3;
+}
+
+.grow4{
+  flex-grow: 0;
+ }

@@ -1,0 +1,79 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+.container{
+  display: grid;
+  /* grid-template-columns: 1fr 1fr 1fr 1fr; */
+  grid-template-columns: repeat(4,1fr);
+  grid-template-rows: repeat(4,15vh) 15vh 15vh;
+  gap: 10px 15px;
+ 
+ 
+}
+
+.parca{
+  /* border: 1px solid red; */
+  background-color: yellowgreen;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ 
+}
+
+.parca1{
+
+  grid-column-start:1 ;
+  grid-column-end: 3;
+  /* 1. column dan basla 3. column a kadar git ama 3 dahil degil */
+  background-color: pink;
+
+
+}
+
+
+.parca4{
+  /* grid-row-start: 2;
+  grid-row-end: 4; */
+  background-color:orange ;
+  grid-area: 2/1/4/2;
+}
+
+
+.parca6{ 
+  /* grid-row-start: 2;
+  grid-row-end: 4;
+  grid-column-start: 3;
+  grid-column-end: 5; */
+  /* background-color: blueviolet; */
+  /* kisayol */
+  grid-area: 2/3/4/5;
+  background-color: fuchsia;
+}
+
+.parca8{
+
+  grid-column-start:1 ;
+  grid-column-end: 3;
+  background-color: yellow;
+
+
+}
+
+.parca9{
+  grid-row-start: 4;
+  grid-row-end: 6;
+  grid-column: 3;
+  /* Cok fazla satir sütun genisletmesi yaptigimizda kutunun yeri degisirse, onun yerini tekrar belirtmeliyiz. */
+  background-color: cadetblue;
+}
+
+.parca12{
+  grid-row-start: 5;
+  grid-row-end: 7;
+  grid-column: 2;
+  background-color: blanchedalmond;
+}
