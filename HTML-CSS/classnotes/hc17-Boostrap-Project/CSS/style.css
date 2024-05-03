@@ -101,7 +101,7 @@
 
 section#about{
   background-color: var(--secondary-color);
-  /* height: 100vh; */
+  height: 100vh;
 }
 
 
@@ -240,5 +240,6 @@ border-radius: 1rem;
 
 footer{
   background-color: var(--primary-color);
+ 
 }
 
